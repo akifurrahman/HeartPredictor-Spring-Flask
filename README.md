@@ -12,7 +12,7 @@
 - **Real-Time Predictions**: Sends data via APIs to the Python Flask server to trigger the ML model.
 - **Data Storage**: Results are stored in a SQL database and displayed upon request.
 - **High Accuracy**: Utilizes machine learning algorithms to deliver reliable predictions.
-
+- **User Privacy**: Includes user authentication for secure access to predictions and patient data.
 ---
 
 ## Tech Stack ⚙️
@@ -111,7 +111,6 @@ Before running the application, ensure that your **MySQL server** is running and
 
 ## Future Improvements 🌱
 
-- Add user authentication for secure access to predictions and patient data.
 - Expand model capabilities to predict other cardiovascular conditions.
 - Enhance front-end UI/UX for better user experience.
 
