@@ -21,7 +21,7 @@
 |-----------------------|--------------------------------------------------|
 | **Back-End (Server 1)** | Spring Boot, JSP                               |
 | **Back-End (Server 2)** | Python, Flask                                  |
-| **Database**           | MySQL (or PostgreSQL)                           |
+| **Database**           | MySQL                           |
 | **Machine Learning**   | Scikit-learn, Pandas, NumPy                     |
 | **Front-End**         | HTML/CSS (via JSP)                              |
 
