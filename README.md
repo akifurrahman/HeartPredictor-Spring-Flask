@@ -112,8 +112,6 @@ Before running the application, ensure that your **MySQL server** is running and
 ## Future Improvements 🌱
 
 - Expand model capabilities to predict other cardiovascular conditions.
-- Enhance front-end UI/UX for better user experience.
-
 ---
 
 ## Contributing 🤝
