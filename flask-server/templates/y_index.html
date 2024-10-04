@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            background-image: url("/static/niti.jpg");
+            background-size: cover;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #333;
+            margin: 30px 0;
+        }
+        form {
+            background: #fff;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            text-align: left;
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background: #0056b3;
+        }
+        
+        div{
+            background-color: white;
+            
+        
+        
+        
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Heart Disease Prediction</h1>
+    </div>
+    
+    <form method="POST" action="/predict">
+
+        <label for="age">Age:</label>
+        <input type="text" name="age" required>
+
+        <label for="sex">Sex:</label>
+        <input type="text" name="sex" required>
+
+        <label for="cp">Chest Pain Type:</label>
+        <input type="text" name="cp" required>
+
+        <label for="trestbps">Resting Blood Pressure:</label>
+        <input type="text" name="trestbps" required>
+
+        <label for="chol">Serum Cholesterol:</label>
+        <input type="text" name="chol" required>
+
+        <label for="fbs">Fasting Blood Sugar:</label>
+        <input type="text" name="fbs" required>
+
+        <label for="restecg">Resting Electrocardiographic Results:</label>
+        <input type="text" name="restecg" required>
+
+        <label for="thalach">Maximum Heart Rate Achieved:</label>
+        <input type="text" name="thalach" required>
+
+        <label for="exang">Exercise Induced Angina:</label>
+        <input type="text" name="exang" required>
+
+        <label for="oldpeak">ST Depression Induced by Exercise Relative to Rest:</label>
+        <input type="text" name="oldpeak" required>
+
+        <label for="slope">Slope of the Peak Exercise ST Segment:</label>
+        <input type="text" name="slope" required>
+
+        <label for="ca">Number of Major Vessels Colored by Flourosopy:</label>
+        <input type="text" name="ca" required>
+
+        <label for="thal">Thal:</label>
+        <input type="text" name="thal" required>
+
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
