@@ -21,7 +21,7 @@
 |-----------------------|--------------------------------------------------|
 | **Back-End (Server 1)** | Spring Boot, JSP                               |
 | **Back-End (Server 2)** | Python, Flask                                  |
-| **Database**           | SQL (MySQL/PostgreSQL)                          |
+| **Database**           | MySQL (or PostgreSQL)                           |
 | **Machine Learning**   | Scikit-learn, Pandas, NumPy                     |
 | **Front-End**         | HTML/CSS (via JSP)                              |
 
@@ -54,7 +54,12 @@ To run the project locally, follow these steps:
 
 - **Java Development Kit (JDK)** installed (for Spring Boot).
 - **Python** and **Flask** installed (for the Flask server).
-- **SQL Database** (e.g., MySQL or PostgreSQL) set up for storing results.
+- **MySQL Server** running (for the SQL database).
+- **SQL Database** (MySQL or PostgreSQL) set up for storing results.
+
+### Database Setup 🗄️
+
+Before running the application, ensure that your **MySQL server** is running and create a database named **HeartPredictor-Spring-Flask**.
 
 ### Step-by-Step Guide 🔍
 
@@ -63,15 +68,20 @@ To run the project locally, follow these steps:
    git clone https://github.com/yourusername/HeartPredictor-Spring-Flask.git
    ```
 
-2. **Set up the Spring Boot server**:
-   - Navigate to the `spring-boot-server` directory.
-   - Build and run the Spring Boot server:
+2. **Set up the MySQL server**:
+   - Start the MySQL server.
+   - Create a database named **HeartPredictor-Spring-Flask**.
+
+3. **Set up the Spring Boot server**:
+   - Navigate to the `src/main/java/com/dm04/dm04` directory.
+   - Run the Spring Boot application:
      ```bash
      mvn clean install
      mvn spring-boot:run
      ```
+   - The main Spring Boot application file is named **Dm04Application.java**.
 
-3. **Set up the Flask server**:
+4. **Set up the Flask server**:
    - Navigate to the `flask-server` directory.
    - Install the required Python dependencies:
      ```bash
@@ -82,12 +92,12 @@ To run the project locally, follow these steps:
      python app.py
      ```
 
-4. **Ensure both servers are running**:
-   - Spring Boot server: `http://localhost:8080`
-   - Flask server: `http://localhost:5001`
+5. **Ensure both servers are running**:
+   - Spring Boot server: `http://localhost:5004`
+   - Flask server: `http://127.0.0.1:5001`
 
-5. **Access the application**:
-   - Open your browser and go to `http://localhost:8080/`.
+6. **Access the application**:
+   - Open your browser and go to `http://localhost:5004/`.
    - Input patient details and click on **Predict**.
 
 ---
@@ -119,4 +129,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Feel free to adjust the emoji usage and paths as necessary! This version is designed to be inviting and engaging while maintaining clarity.
+If there are any other changes or additions you need, just let me know!
