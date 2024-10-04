@@ -93,11 +93,11 @@ Before running the application, ensure that your **MySQL server** is running and
      ```
 
 5. **Ensure both servers are running**:
-   - Spring Boot server: `http://localhost:5004`
+   - Spring Boot server: `http://127.0.0.1:5004`
    - Flask server: `http://127.0.0.1:5001`
 
 6. **Access the application**:
-   - Open your browser and go to `http://localhost:5004/`.
+   - Open your browser and go to `http://127.0.0.1:5004/`.
    - Input patient details and click on **Predict**.
 
 ---
