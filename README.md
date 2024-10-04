@@ -120,13 +120,3 @@ Before running the application, ensure that your **MySQL server** is running and
 ## Contributing 🤝
 
 We welcome contributions to **HeartPredictor-Spring-Flask**! Please feel free to fork the repository and submit pull requests.
-
----
-
-## License 📜
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-If there are any other changes or additions you need, just let me know!
